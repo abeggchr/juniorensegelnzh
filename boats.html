@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <title>Junioren Segeln Stadt Zürich</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Bootsklassen</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+
+
+<section id="optimist">
+    <h2><img src="assets/optimist.png" height="30px"/> Optimist </h2>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <p id="optimist-boat-intro"></p>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Typ</th>
+                    <td><span id="optimist-typ"></span></td>
+                </tr>
+                <tr>
+                    <th>Segelfläche</th>
+                    <td><span id="optimist-flaeche"></span></td>
+                </tr>
+                <tr>
+                    <th>Länge</th>
+                    <td><span id="optimist-laenge"></span></td>
+                </tr>
+                <tr>
+                    <th>Bootsgewicht</th>
+                    <td><span id="optimist-gewicht"></span></td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td><span id="optimist-alter"></span></td>
+                </tr>
+                <tr>
+                    <th>Crew</th>
+                    <td><span id="optimist-crew"></span></td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.habli.ch/sce/0700.php'">
+                            Trainings (Anfänger bis Regatta)
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://kindersegelschule.ch'">
+                            Kindersegelschule (Anfänger)
+                        </button>
+                    </th>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#optimistModal">
+                            Infos zur Klasse
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
+                            Entscheidungshilfe
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal fade" id="optimistModal" tabindex="-1" role="dialog" aria-labelledby="optimistModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="optimistModalLabel">Optimist</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="optimist-boat"></p>
+                        <p>
+                            <a href="http://www.optimist.ch">zur Klassenvereinigung</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="matrixModal" tabindex="-1" role="dialog" aria-labelledby="matrixModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/matrix.jpg" width="100%" data-dismiss="modal"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div id="carousel-optimist" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-optimist" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-optimist" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-optimist" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/optimist/slide1.jpg" alt="First slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/optimist/slide2.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/optimist/slide3.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-optimist" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-optimist" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="laser">
+    <h2><img src="assets/laser.png" height="30px"/> Laser </h2>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <p id="laser-boat-intro"></p>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Typ</th>
+                    <td><span id="laser-typ"></span></td>
+                </tr>
+                <tr>
+                    <th>Segelfläche</th>
+                    <td><span id="laser-flaeche"></span></td>
+                </tr>
+                <tr>
+                    <th>Länge</th>
+                    <td><span id="laser-laenge"></span></td>
+                </tr>
+                <tr>
+                    <th>Bootsgewicht</th>
+                    <td><span id="laser-gewicht"></span></td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td><span id="laser-alter"></span></td>
+                </tr>
+                <tr>
+                    <th>Crew</th>
+                    <td><span id="laser-crew"></span></td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.z-s-c.ch/node/23'">
+                            Trainings
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.z-s-c.ch/node/23'">
+                            Schulsportkurs
+                        </button>
+                    </th>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#laserModal">
+                            Infos zur Klasse
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
+                            Entscheidungshilfe
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal fade" id="laserModal" tabindex="-1" role="dialog" aria-labelledby="laserModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="laserModalLabel">Laser</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="laser-boat"></p>
+                        <p>
+                            <a href="http://www.swiss-laser.org">zur Klassenvereinigung</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="carousel-laser" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-laser" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-laser" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-laser" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/laser/slide1.jpg" alt="First slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/laser/slide2.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/laser/slide3.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-laser" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-laser" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="420">
+
+    <h2><img src="assets/420.png" height="30px"/>420er</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <p id="j420-boat-intro"></p>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Typ</th>
+                    <td><span id="j420-typ"></span></td>
+                </tr>
+                <tr>
+                    <th>Segelfläche</th>
+                    <td><span id="j420-flaeche"></span></td>
+                </tr>
+                <tr>
+                    <th>Länge</th>
+                    <td><span id="j420-laenge"></span></td>
+                </tr>
+                <tr>
+                    <th>Bootsgewicht</th>
+                    <td><span id="j420-gewicht"></span></td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td><span id="j420-alter"></span></td>
+                </tr>
+                <tr>
+                    <th>Crew</th>
+                    <td><span id="j420-crew"></span></td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.habli.ch/sce/0700.php'">
+                            Trainings
+                        </button>
+                    </th>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#420Modal">
+                        Infos zur Klasse
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
+                            Entscheidungshilfe
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal fade" id="420Modal" tabindex="-1" role="dialog" aria-labelledby="420ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="420ModalLabel">420er</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="j420-boat"></p>
+                        <p>
+                            <a href="http://swiss420association.blogspot.ch/">zur Klassenvereinigung</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="carousel-420" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-420" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-420" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-420" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/420/slide1.jpg" alt="First slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/420/slide2.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/420/slide3.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-420" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-420" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="29">
+
+
+    <h2><img src="assets/29er.jpg" height="30px"/> 29er</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <p id="j29-boat-intro"></p>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Typ</th>
+                    <td><span id="j29-typ"></span></td>
+                </tr>
+                <tr>
+                    <th>Segelfläche</th>
+                    <td><span id="j29-flaeche"></span></td>
+                </tr>
+                <tr>
+                    <th>Länge</th>
+                    <td><span id="j29-laenge"></span></td>
+                </tr>
+                <tr>
+                    <th>Gewicht</th>
+                    <td><span id="j29-gewicht"></span></td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td><span id="j29-alter"></span></td>
+                </tr>
+                <tr>
+                    <th>Crew</th>
+                    <td><span id="j29-crew"></span></td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.zyc.ch/site/index.cfm?id_art=78661&actMenuItemID=35238'">
+                            Trainings
+                        </button>
+                    </th>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#29Modal">
+                            Infos zur Klasse
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
+                            Entscheidungshilfe
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal fade" id="29Modal" tabindex="-1" role="dialog" aria-labelledby="29ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="29ModalLabel">29er</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="j29-boat"></p>
+                        <p>
+                            <a href="http://www.29er.ch">zur Klassenvereinigung</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="carousel-29er" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-29er" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-29er" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-29er" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-29er" data-slide-to="3" class=""></li>
+                    <li data-target="#carousel-29er" data-slide-to="4" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/29er/slide1.jpg" alt="First slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/29er/slide2.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/29er/slide3.jpg" alt="Third slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/29er/slide4.jpg" alt="Third slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/29er/slide5.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-29er" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-29er" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="yacht">
+
+
+    <h2><img src="assets/yacht.jpg" height="30px"/>Yacht</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <p id="yacht-boat-intro"></p>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Typ</th>
+                    <td><span id="yacht-typ"></span></td>
+                </tr>
+                <tr>
+                    <th>Segelfläche</th>
+                    <td><span id="yacht-flaeche"></span></td>
+                </tr>
+                <tr>
+                    <th>Länge</th>
+                    <td><span id="yacht-laenge"></span></td>
+                </tr>
+                <tr>
+                    <th>Gewicht</th>
+                    <td><span id="yacht-gewicht"></td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td><span id="yacht-alter"></span></td>
+                </tr>
+                <tr>
+                    <th>Crew</th>
+                    <td><span id="yacht-crew"></span></td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='http://www.zyc.ch/site/index.cfm?id_art=78660&actMenuItemID=35237'">
+                            Trainings
+                        </button>
+                    </th>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#yachtModal">
+                            Infos zur Klasse
+                        </button>
+                        <br /><br />
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
+                            Entscheidungshilfe
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal fade" id="yachtModal" tabindex="-1" role="dialog" aria-labelledby="yachtModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="yachtModalLabel">Yacht</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="yacht-boat"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="carousel-yacht" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-yacht" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-yacht" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-yacht" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-yacht" data-slide-to="3" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/yacht/slide1.jpg" alt="First slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/yacht/slide2.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/yacht/slide3.jpg" alt="Third slide"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/yacht/slide4.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-yacht" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-yacht" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <hr />
+    
+    <footer>
+        <small>
+            <p class="pull-right"><a href="#">Nach oben</a></p>
+        </small>
+    </footer>
+
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/tabletop.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41398310-2', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
