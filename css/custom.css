@@ -9,7 +9,6 @@ section{
 
 .alert {
     margin-top: 20px;
-
 }
 
 th {
@@ -47,4 +46,20 @@ button {
      width: 100%;
      height: 500px;
      background-color: #CCC;
+ }
+
+ a.btn {
+     width: 100%;
+ }
+
+ ol#home li {
+     font-size: 21px;
+ }
+
+ div.js-home {
+     margin-top: 0px;
+ }
+
+ div#js-club-intro {
+     font-size: 21px;
  }

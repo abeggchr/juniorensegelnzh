@@ -40,6 +40,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="#">Bootsklassen</a></li>
                 <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="assets/JuniorenSegelnZhAnmeldung.pdf" target="_blank">Anmeldung</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -48,6 +50,33 @@
 
 <div class="container">
 
+    <section id="top">
+        <h2>Übersicht Bootsklassen</h2>
+        <h3>Nach Alter / Gewicht und Niveau</h3>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <img src="assets/matrix.jpg" usemap="#image-maps-2015-06-01-125403"/>
+               <!-- <img id="Image-Maps-Com-image-maps-2015-06-01-125403" src="http://www.image-maps.com/m/private/0/tvcv6veno99dd1urpql9edi9j7_matrix.jpg" border="0" width="720" height="540" orgWidth="720" orgHeight="540"  alt="" /> -->
+                <map name="image-maps-2015-06-01-125403" id="ImageMapsCom-image-maps-2015-06-01-125403">
+                    <area title="Laser" href="#laser" shape="rect" coords="163,126,323,247" style="outline:none;" target="_self"     />
+                    <area title="Yacht" href="#yacht" shape="rect" coords="163,253,323,371" style="outline:none;" target="_self"     />
+                    <area title="Optimist" href="#optimist" shape="rect" coords="164,389,682,507" style="outline:none;" target="_self"     />
+                    <area title="Laser" href="#laser" shape="rect" coords="341,127,686,184" style="outline:none;" target="_self"     />
+                    <area title="29er" href="#29" shape="rect" coords="340,192,685,249" style="outline:none;" target="_self"     />
+                    <area title="420" href="#420" shape="rect" coords="340,254,685,311" style="outline:none;" target="_self"     />
+                    <area title="yacht" href="#yacht" shape="rect" coords="339,317,684,374" style="outline:none;" target="_self"     />
+                    <!--<area shape="rect" coords="718,538,720,540" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" /> -->
+                </map>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
 
 <section id="optimist">
     <h2><img src="assets/optimist.png" height="30px"/> Optimist </h2>
@@ -55,32 +84,35 @@
     <div class="row">
         <div class="col-md-6">
 
-            <p id="optimist-boat-intro"></p>
+            <p id="optimist-boat-intro">
+                Die Optimisten-Jolle (oft kurz Opti genannt) ist eine kleine und leichte Jolle für Kinder und Jugendliche bis etwa 15 Jahre.
+                Das weltweit in hohen Stückzahlen verbreitete Segelboot führt nur ein Segel und dient neben Freizeitzwecken als Einstiegsklasse für den Regattasport.
+            </p>
 
             <table class="table table-hover">
                 <tr>
                     <th>Typ</th>
-                    <td><span id="optimist-typ"></span></td>
+                    <td><span id="optimist-typ">Jolle</span></td>
                 </tr>
                 <tr>
                     <th>Segelfläche</th>
-                    <td><span id="optimist-flaeche"></span></td>
+                    <td><span id="optimist-flaeche">3.3 m<sup>2</sup></span></td>
                 </tr>
                 <tr>
                     <th>Länge</th>
-                    <td><span id="optimist-laenge"></span></td>
+                    <td><span id="optimist-laenge">2.30 m</span></td>
                 </tr>
                 <tr>
                     <th>Bootsgewicht</th>
-                    <td><span id="optimist-gewicht"></span></td>
+                    <td><span id="optimist-gewicht">35 kg</span></td>
                 </tr>
                 <tr>
                     <th>Alter</th>
-                    <td><span id="optimist-alter"></span></td>
+                    <td><span id="optimist-alter">8 bis 15</span></td>
                 </tr>
                 <tr>
                     <th>Crew</th>
-                    <td><span id="optimist-crew"></span></td>
+                    <td><span id="optimist-crew">1</span></td>
                 </tr>
                 <tr>
                     <th>
@@ -97,9 +129,7 @@
                             Infos zur Klasse
                         </button>
                         <br /><br />
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
-                            Entscheidungshilfe
-                        </button>
+                        <a href="#top" class="btn btn-info">Zurück zur Übersicht</a>
                     </td>
                 </tr>
             </table>
@@ -113,23 +143,13 @@
                         <h4 class="modal-title" id="optimistModalLabel">Optimist</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="optimist-boat"></p>
+                        <p id="optimist-boat">
+                            Der Optimist ist die Seifenkiste der Segler. Das 2.3m lange Böötchen erfreut sich einer weltweiten Beliebtheit und wird auf der ganzen Welt regattamässig gesegelt.
+                            Das Boot ist aufgrund seiner Formstabilität bestens für Anfänger geeignet, bietet dank verschiedener Trimmmöglichkeiten auch alles, was es braucht um Regattasport betreiben zu können.
+                        </p>
                         <p>
                             <a href="http://www.optimist.ch">zur Klassenvereinigung</a>
                         </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="matrixModal" tabindex="-1" role="dialog" aria-labelledby="matrixModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img src="assets/matrix.jpg" width="100%" data-dismiss="modal"/>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
@@ -174,32 +194,36 @@
     <div class="row">
         <div class="col-md-6">
 
-            <p id="laser-boat-intro"></p>
+            <p id="laser-boat-intro">
+                Der Laser ist mit weltweit über 204'000 verkauften Booten die verbreiteste Jolle.
+                Durch die strikte Einheitsklasse ist die Leistung des Seglers entscheidend.
+                Der Laser existiert in drei Klassen, die sich nur in der Segelgrösse unterscheiden und nur das Mastunterteil und Segel gewechselt werden muss.
+            </p>
 
             <table class="table table-hover">
                 <tr>
                     <th>Typ</th>
-                    <td><span id="laser-typ"></span></td>
+                    <td><span id="laser-typ">Jolle</span></td>
                 </tr>
                 <tr>
                     <th>Segelfläche</th>
-                    <td><span id="laser-flaeche"></span></td>
+                    <td><span id="laser-flaeche">4.7 / 5.7 / 7  m<sup>2</sup></span></td>
                 </tr>
                 <tr>
                     <th>Länge</th>
-                    <td><span id="laser-laenge"></span></td>
+                    <td><span id="laser-laenge">4.23 m</span></td>
                 </tr>
                 <tr>
                     <th>Bootsgewicht</th>
-                    <td><span id="laser-gewicht"></span></td>
+                    <td><span id="laser-gewicht">65 kg</span></td>
                 </tr>
                 <tr>
                     <th>Alter</th>
-                    <td><span id="laser-alter"></span></td>
+                    <td><span id="laser-alter">ab 14</span></td>
                 </tr>
                 <tr>
                     <th>Crew</th>
-                    <td><span id="laser-crew"></span></td>
+                    <td><span id="laser-crew">1</span></td>
                 </tr>
                 <tr>
                     <th>
@@ -216,9 +240,7 @@
                             Infos zur Klasse
                         </button>
                         <br /><br />
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
-                            Entscheidungshilfe
-                        </button>
+                        <a href="#top" class="btn btn-info">Zurück zur Übersicht</a>
                     </td>
                 </tr>
             </table>
@@ -232,7 +254,14 @@
                         <h4 class="modal-title" id="laserModalLabel">Laser</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="laser-boat"></p>
+                        <p id="laser-boat">
+                            Der Laser ist 4.23m lang und eine strikte Einheitsklasse.
+                            Dadurch ist die Leistung des Seglers entscheidend für den Erfolg.
+                            Der Laser existiert in drei Klassen, die sich nur in der Segelgrösse unterscheiden und nur das Mastunterteil und Segel gewechselt werden muss.
+                            Leichte, junge Segler/innen starten nach dem Opti auf dem 4.7. Das Radialsegel ist mit 5.7m<sup>2</sup> für Jugendliche Segler das Juniorenboot.
+                            Die Frauen bleiben auf dem Radial, die Männer wechseln später auf den Laser Standard (7.06m<sup>2</sup>).
+                            Seit 1996 ist der Laserstandard für die Männer olympisch und der Laser Radial seit 2008 für die Frauen.
+                        </p>
                         <p>
                             <a href="http://www.swiss-laser.org">zur Klassenvereinigung</a>
                         </p>
@@ -275,37 +304,39 @@
 
 <section id="420">
 
-    <h2><img src="assets/420.png" height="30px"/>420er</h2>
+    <h2><img src="assets/420.png" height="30px"/> 420er</h2>
 
     <div class="row">
         <div class="col-md-6">
 
-            <p id="j420-boat-intro"></p>
+            <p id="j420-boat-intro">
+                Der 420er ist eine Zweimannjolle für Jugendliche und Erwachsene mit Trapez und Spinnaker.
+            </p>
 
             <table class="table table-hover">
                 <tr>
                     <th>Typ</th>
-                    <td><span id="j420-typ"></span></td>
+                    <td><span id="j420-typ">Jolle</span></td>
                 </tr>
                 <tr>
                     <th>Segelfläche</th>
-                    <td><span id="j420-flaeche"></span></td>
+                    <td><span id="j420-flaeche">10 m<sup>2</sup> + 9 m<sup>2</sup> (Spi)</span></td>
                 </tr>
                 <tr>
                     <th>Länge</th>
-                    <td><span id="j420-laenge"></span></td>
+                    <td><span id="j420-laenge">4.20 m</span></td>
                 </tr>
                 <tr>
                     <th>Bootsgewicht</th>
-                    <td><span id="j420-gewicht"></span></td>
+                    <td><span id="j420-gewicht">100 kg</span></td>
                 </tr>
                 <tr>
                     <th>Alter</th>
-                    <td><span id="j420-alter"></span></td>
+                    <td><span id="j420-alter">von 14 bis 18</span></td>
                 </tr>
                 <tr>
                     <th>Crew</th>
-                    <td><span id="j420-crew"></span></td>
+                    <td><span id="j420-crew">2</span></td>
                 </tr>
                 <tr>
                     <th>
@@ -318,9 +349,7 @@
                         Infos zur Klasse
                         </button>
                         <br /><br />
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
-                            Entscheidungshilfe
-                        </button>
+                        <a href="#top" class="btn btn-info">Zurück zur Übersicht</a>
                     </td>
                 </tr>
             </table>
@@ -334,7 +363,10 @@
                         <h4 class="modal-title" id="420ModalLabel">420er</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="j420-boat"></p>
+                        <p id="j420-boat">
+                            Der 420er ist das offizielle Juniorenboot von Swiss-Sailing und wird in den meisten Nationen als Regattaboot für Jugendliche gefördert.
+                            Der 420er bildet die ideale Grundlage, um den Segelsport mit allen Facetten (technisch, taktisch) zu erlernen und ist die ideale Vorbereitung für die olympischen 470er-Klasse.
+                        </p>
                         <p>
                             <a href="http://swiss420association.blogspot.ch/">zur Klassenvereinigung</a>
                         </p>
@@ -383,32 +415,34 @@
     <div class="row">
         <div class="col-md-6">
 
-            <p id="j29-boat-intro"></p>
+            <p id="j29-boat-intro">
+                Der 29er ist ein schnelles, athletisches und sehr modernes Juniorenboot. Das Segeln auf dem 29er macht Riesenspass!
+            </p>
 
             <table class="table table-hover">
                 <tr>
                     <th>Typ</th>
-                    <td><span id="j29-typ"></span></td>
+                    <td><span id="j29-typ">Jolle</span></td>
                 </tr>
                 <tr>
                     <th>Segelfläche</th>
-                    <td><span id="j29-flaeche"></span></td>
+                    <td><span id="j29-flaeche">13 m<sup>2</sup> + 17m<sup>2</sup> (Gennaker)</span></td>
                 </tr>
                 <tr>
                     <th>Länge</th>
-                    <td><span id="j29-laenge"></span></td>
+                    <td><span id="j29-laenge">4.40 m</span></td>
                 </tr>
                 <tr>
-                    <th>Gewicht</th>
-                    <td><span id="j29-gewicht"></span></td>
+                    <th>Bootsgewicht</th>
+                    <td><span id="j29-gewicht">90 kg</span></td>
                 </tr>
                 <tr>
                     <th>Alter</th>
-                    <td><span id="j29-alter"></span></td>
+                    <td><span id="j29-alter">von 13 bis 20 </span></td>
                 </tr>
                 <tr>
                     <th>Crew</th>
-                    <td><span id="j29-crew"></span></td>
+                    <td><span id="j29-crew">2</span></td>
                 </tr>
                 <tr>
                     <th>
@@ -421,9 +455,7 @@
                             Infos zur Klasse
                         </button>
                         <br /><br />
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
-                            Entscheidungshilfe
-                        </button>
+                        <a href="#top" class="btn btn-info">Zurück zur Übersicht</a>
                     </td>
                 </tr>
             </table>
@@ -437,7 +469,10 @@
                         <h4 class="modal-title" id="29ModalLabel">29er</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="j29-boat"></p>
+                        <p id="j29-boat">
+                            Das 29er-Training findet mittwochs ab 1700 Uhr im ZYC statt.
+                            Trainiert werden alle Elemente für eine erfolreiche Regatta (Bootshandling, Taktik, Strategie, Fitness). Zielpublikum für den 29er sind Jugendliche, welche bereits Regattaerfahrung auf Jollen nachweisen können und gerne ein schnelles und herausforderndes Boot segeln möchten.
+                        </p>
                         <p>
                             <a href="http://www.29er.ch">zur Klassenvereinigung</a>
                         </p>
@@ -490,37 +525,36 @@
 <section id="yacht">
 
 
-    <h2><img src="assets/yacht.jpg" height="30px"/>Yacht</h2>
+    <h2><img src="assets/yacht.jpg" height="30px"/> Yacht</h2>
 
     <div class="row">
         <div class="col-md-6">
 
-            <p id="yacht-boat-intro"></p>
+            <p id="yacht-boat-intro">
+                Unsere Yachtgruppe verwendet sportliche Boote von etwa acht Metern länge.
+                Im Moment sind es Boote der mOcean und Blu26 Klasse.
+            </p>
 
             <table class="table table-hover">
                 <tr>
                     <th>Typ</th>
-                    <td><span id="yacht-typ"></span></td>
+                    <td><span id="yacht-typ">Yacht</span></td>
                 </tr>
                 <tr>
                     <th>Segelfläche</th>
-                    <td><span id="yacht-flaeche"></span></td>
+                    <td><span id="yacht-flaeche">30 bis 40 m<sup>2</sup> und 50 bis 70 m<sup>2</sup> (Spi oder Gennaker)</span></td>
                 </tr>
                 <tr>
                     <th>Länge</th>
-                    <td><span id="yacht-laenge"></span></td>
-                </tr>
-                <tr>
-                    <th>Gewicht</th>
-                    <td><span id="yacht-gewicht"></td>
+                    <td><span id="yacht-laenge">ca. 8 m</span></td>
                 </tr>
                 <tr>
                     <th>Alter</th>
-                    <td><span id="yacht-alter"></span></td>
+                    <td><span id="yacht-alter">von 13 bis 20</span></td>
                 </tr>
                 <tr>
                     <th>Crew</th>
-                    <td><span id="yacht-crew"></span></td>
+                    <td><span id="yacht-crew">3 bis 6</span></td>
                 </tr>
                 <tr>
                     <th>
@@ -533,9 +567,7 @@
                             Infos zur Klasse
                         </button>
                         <br /><br />
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#matrixModal">
-                            Entscheidungshilfe
-                        </button>
+                        <a href="#top" class="btn btn-info">Zurück zur Übersicht</a>
                     </td>
                 </tr>
             </table>
@@ -549,7 +581,10 @@
                         <h4 class="modal-title" id="yachtModalLabel">Yacht</h4>
                     </div>
                     <div class="modal-body">
-                        <p id="yacht-boat"></p>
+                        <p id="yacht-boat">
+                            Das Yacht-Training findet mittwochs ab 1700 Uhr im ZYC statt. In der Anfängergruppe wird das Basiswissen des Segelns vermittelt, mit dem Ziel die D-Schein-Prüfung erfolgreich zu absolvieren. Mit dem D-Schein darf man sämtliche Segelboote auf Schweizer Seen führen.
+                            In der Gruppe der Fortgeschrittenen wird das Regattasegeln auf Yachten vertieft. Das Ziel ist es ein Team zu formen, welches fähig ist, an Yachtregatten teilzunehmen. Zielpublikum sind Jugendliche ab 14 Jahren.
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
@@ -602,8 +637,6 @@
 </div>
 
 <script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/tabletop.js"></script>
-<script src="js/texts.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

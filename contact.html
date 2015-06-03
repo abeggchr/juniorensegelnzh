@@ -22,39 +22,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        // ,
-        function initialize() {
-            var mapCanvas = document.getElementById('map-canvas');
-            var mapOptions = {
-                center: new google.maps.LatLng(47.3576382, 8.5421348),
-                zoom: 14,
-                mapTypeId: google.maps.MapTypeId.SATELLITE
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions);
 
-            var zsc = new google.maps.Marker({
-                position: new google.maps.LatLng(47.3545622, 8.5523696),
-                title:"ZSC"
-            });
-            zsc.setMap(map);
-
-            var sce = new google.maps.Marker({
-                position: new google.maps.LatLng( 47.3488226, 8.5353166),
-                title:"SCE"
-            });
-            sce.setMap(map);
-
-            var zyc = new google.maps.Marker({
-                position: new google.maps.LatLng(47.364244, 8.5383252),
-                title:"ZYC"
-            });
-            zyc.setMap(map);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 </head>
+<!-- NAVBAR
+================================================== -->
 <body>
 
 <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -71,54 +42,43 @@
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="boats.html">Bootsklassen</a></li>
-                <li class="active"><a href="#">Clubs</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
                 <li><a href="assets/JuniorenSegelnZhAnmeldung.pdf" target="_blank">Anmeldung</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li class="active"><a href="#">Kontakt</a></li>
             </ul>
         </div>
     </div>
 </header>
 
+<br />
 
 <div class="container">
-
-    <br />
-
-    <div id="js-club-intro">
-        Die Junioren können an allen Trainingsangeboten der drei Clubs teilnehmen. Dabei spielt es keine Rolle
-        in welchem der drei Clubs sie Mitglied sind.
-    </div>
-
     <div class="row">
         <div class="col-md-4">
             <h2><img src="assets/sce.png" alt="SCE" height="30"/> Segel-Club Enge</h2>
-
             <p>
-                <a href="http://www.habli.ch/sce/0700.php">www.segelclubenge.ch</a>
+                Bootsklassen: Optimist, 420<br />
+                <a href="mailto:yannic.straub@bluewin.ch">Yannic Straub</a>
             </p>
         </div>
-
 
         <div class="col-md-4">
             <h2><img src="assets/zyc.jpg" alt="zyc" height="30"/> Zürcher Yacht Club</h2>
-               <p>
-                <a href="http://www.zyc.ch/site/index.cfm?id_art=60631&actMenuItemID=26006">www.zyc.ch</a>
+            <p>
+                Bootsklasse: Laser<br />
+                <a href="mailto:junioren@z-s-c.ch">Olivier Fessler</a>
             </p>
-
         </div>
-
 
         <div class="col-md-4">
             <h2><img src="assets/zsc.png" alt="ZSC" height="30"/> Zürcher Segel Club</h2>
-
             <p>
-                <a href="http://www.z-s-c.ch/junioren">www.z-s-c.ch</a>
+                Bootsklassen: 29er, Yacht<br />
+                <a href="mailto:juga@zyc.ch">Rico Hasler</a>
             </p>
-
         </div>
-    </div>
 
-    <div id="map-canvas" class="hidden-xs hidden-sm"></div>
+    </div>
 </div>
 
 <script src="js/jquery-1.10.2.min.js"></script>
