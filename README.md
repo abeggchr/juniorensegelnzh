@@ -6,6 +6,6 @@ http://www.juniorensegelnzh.ch
 
 ## deployment
 
-* static website
-* no branches
-* just `git pull` in server folder `juniorensegelnzh`
+- static website
+- select branch in netlify
+- automatically deployed to https://jolly-fermat-7e95a4.netlify.app/
