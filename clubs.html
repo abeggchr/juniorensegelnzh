@@ -30,7 +30,7 @@
         {
             var map = new atlas.Map('map-canvas', {
                 center: [8.5421348, 47.3576382],
-                zoom: 13,
+                zoom: 14,
                 language: 'de-CH',
                 showLogo: false,
                 showFeedbackLink: false,
@@ -39,7 +39,7 @@
                     subscriptionKey: 'Mkp0vYI_X_H1EdpzsKSorVdlc3jgf-cSaGLDnOtg7mI'
                 }
             });
-            map.setStyle({ style: 'satellite' });
+            map.setStyle({ style: 'terra' }); // requires non-free tier
 
             map.events.add('ready', function () {
 
@@ -48,7 +48,7 @@
                 map.sources.add(dataSource);
 
                 //Create a symbol layer to render icons and/or text at points on the map.
-                var layer = new atlas.layer.BubbleLayer(dataSource);
+                var layer = new atlas.layer.SymbolLayer(dataSource, null, { iconOptions: { image: "marker-red"}});
 
                 //Add the layer to the map.
                 map.layers.add(layer);
