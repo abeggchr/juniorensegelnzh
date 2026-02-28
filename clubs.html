@@ -16,48 +16,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
-    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
-    <script>
-        function InitMap()
-        {
-            var map = new atlas.Map('map-canvas', {
-                center: [8.5421348, 47.3576382],
-                zoom: 14,
-                language: 'de-CH',
-                showLogo: false,
-                showFeedbackLink: false,
-                authOptions: {
-                    authType: 'subscriptionKey',
-                    subscriptionKey: 'Mkp0vYI_X_H1EdpzsKSorVdlc3jgf-cSaGLDnOtg7mI'
-                }
-            });
-            // map.setStyle({ style: 'satelite' }); // requires non-free tier
-
-            map.events.add('ready', function () {
-
-                //Create a data source and add it to the map.
-                var dataSource = new atlas.source.DataSource();
-                map.sources.add(dataSource);
-
-                //Create a symbol layer to render icons and/or text at points on the map.
-                var layer = new atlas.layer.SymbolLayer(dataSource, null, { iconOptions: { image: "marker-red"}});
-
-                //Add the layer to the map.
-                map.layers.add(layer);
-
-                //Create a point and add it to the data source.
-                dataSource.add(new atlas.data.Point([8.5523696, 47.3545622])); // zsc
-                dataSource.add(new atlas.data.Point([8.5353166, 47.3488226])); // sce
-                dataSource.add(new atlas.data.Point([8.5383252, 47.364244])); // zyc
-
-            });
-        }
-    </script>
 </head>
 
-<body onload="InitMap()">
+<body>
 
     <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -120,11 +81,30 @@
             </div>
         </div>
 
-        <div id="map-canvas" class="hidden-xs hidden-sm"></div>
+        <div id="map-canvas" class="hidden-xs hidden-sm" style="height: 700px;"></div>
     </div>
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  const map = L.map('map-canvas').setView([47.3576382, 8.5421348], 15);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([47.3545622, 8.5523696]).addTo(map); // zsc
+  L.marker([47.3488226, 8.5353166]).addTo(map); // sce
+  L.marker([47.3642440, 8.5383252]).addTo(map); // zyc
+</script>
 </body>
 
 </html>
